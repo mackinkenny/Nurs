@@ -49,11 +49,15 @@
      	color: #66676A!important;
      }
      .text-verona.active {
-     	border-right: 1px solid #66676A;
-     	border-left: 1px solid #66676A;
+     	border-right: 1px solid rgba(0, 0, 0, 0.3);
+     	border-left: 1px solid rgba(0, 0, 0, 0.3);
+     	border-radius: 0px;
      }
      .text-verona.active:focus, .btn:focus {
      	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0)!important;
+     }
+     .hr-new{
+     	border-top: 1px solid rgba(0, 0, 0, 0.2);
      }
 </style>
 
@@ -110,10 +114,10 @@
 	</div>
 
 	<div class="row justify-content-center">
-		<div class="col-10">
-			<hr class="m-0">
+		<!-- <div class="col-10">
+			<hr class="m-0 hr-new">
 		</div>
-		<div class="col-12"></div>
+		<div class="col-12"></div> -->
 		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
 		  	<li class="nav-item">
 		    	<a class="btn text-verona active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Об объекте</a>
@@ -128,7 +132,7 @@
 	</div>
 	<div class="tab-content" id="pills-tabContent">
   		<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-  			<div class="row my-5 justify-content-center">
+  			<div class="row mb-5 justify-content-center">
 	<!-- 		<div class="owl-carousel">
 			  	<div class="col-12 card border-0 text-center">
 					  	<div class="card-header">
