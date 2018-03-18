@@ -31,6 +31,9 @@
 		background-color: #f3ebd5;
 		border: 3px solid #b9921c;
 	}
+	p.indent {
+		text-indent: 3.5em;
+	}
 </style>
 <style>
      .navbar-brand {
@@ -66,9 +69,9 @@
           <a class="navbar-brand" style="">
                <img src="icons/logo.png" class="w-50" usemap="#Map" alt="">
           </a>
-			<map name="Map" id="Map">
-			    <area alt="" title="" href="/" shape="poly" coords="2,0,172,0,172,248,86,209,3,249" />
-			</map>
+               <map name="Map" id="Map">
+                   <area alt="" title="" href="/" shape="poly" coords="2,0,172,0,172,248,86,209,3,249" />
+               </map>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
           </button>
@@ -81,9 +84,13 @@
                     <li class="nav-item">
                          <a class="nav-link" href="#">О компании</a>
                     </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="#">Объекты</a>
+                    <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Объекты</a>
+                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          	<a class="dropdown-item" href="#">Verona Residence</a>
+				        </div>
                     </li>
+
                     <li class="nav-item">
                          <a class="nav-link" href="#">Акции</a>
                     </li>
@@ -244,7 +251,7 @@
 				<h1 class="text-center mb-5" style="font-family: Lobster;"><hr>Об объекте<hr></h1>
 				<div class="row my-3 justify-content-center">
 					<div class="col-12 col-md-10">
-						<p style="font-family: forum; text-transform: uppercase;">Имиджевый проект «Verona Residence» от строительной компании ОсОО «Бай Сервис Девелопмент»,
+						<p class="indent" style="font-family: forum; text-transform: uppercase;">Имиджевый проект «Verona Residence» от строительной компании ОсОО «Бай Сервис Девелопмент»,
 	который воплотит в себя все представления об идеальном жилье. Самое лучшее
 	месторасположение комплекса - пересечение улиц Медерова и Мукая Элебаева позволит Вам без
 	особого труда добраться до места работы и обратно домой.</p>
@@ -252,7 +259,7 @@
 				</div>
 				<div class="row my-3 justify-content-center">
 					<div class="col-12 col-md-10">
-						<p style="font-family: forum; text-transform: uppercase;">Безупречно развитая инфраструктура обеспечит Вашей семье полный доступ ко всем необходимым
+						<p class="indent" style="font-family: forum; text-transform: uppercase;">Безупречно развитая инфраструктура обеспечит Вашей семье полный доступ ко всем необходимым
 	организациям и учреждениям города, начиная от маленького магазина, заканчивая бизнес- и
 	торговыми центрами. В шаговой доступности большой оптомаркет «Бишкек», где Вы сможете
 	приобрести все самое необходимое для жизни по самым выгодным ценам в городе, множества
@@ -262,7 +269,7 @@
 				</div>
 				<div class="row my-3 justify-content-center">
 					<div class="col-12 col-md-10">
-						<p class="mb-5" style="font-family: forum; text-transform: uppercase;">Немаловажным фактором является то, что комплекс оснащен всеми системами инженерных
+						<p class="mb-5 indent" style="font-family: forum; text-transform: uppercase;">Немаловажным фактором является то, что комплекс оснащен всеми системами инженерных
 	коммуникаций (центральным отоплением, водоснабжением, канализацией, электроэнергией),
 	интернетом, телевидением, видеонаблюдением, круглосуточной охраной, а также в доме
 	предусмотрен консьерж, который сохранит порядок и спокойное проживание в доме.</p>
